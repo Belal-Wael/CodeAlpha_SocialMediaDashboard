@@ -1,0 +1,264 @@
+/* start global rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screen */
+@media(min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+/* medium */
+@media(min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+/* large */
+@media(min-width:1200px) {
+    .container {
+        width: 1200px
+    }
+}
+
+/* end global rules */
+
+/* start head */
+.head .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .title {
+    padding: 30px 0;
+}
+
+.head .title h1 {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+@media(max-width:767px) {
+    .head .title h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .head .container {
+        flex-direction: column;
+    }
+
+    .head .title {
+        border-bottom: 2px solid #63687E;
+    }
+
+    .toggle-btn {
+        padding-top: 20px;
+    }
+}
+
+.head .title span {
+    color: #63687E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.head .toggle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #63687E;
+}
+
+.head .toggle-btn span {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.head .toggle-btn i {
+    font-size: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.social-media {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.social-media .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media .container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBF1FF;
+    padding: 30px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-media .container .card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 6px;
+}
+
+.social-media .card img {
+    height: 30px;
+}
+
+.social-media .facebook::before {
+    background-color: #168ff7;
+}
+
+
+.social-media .twiteer::before {
+    background-color: #1da1f2;
+}
+
+
+
+.social-media .instagram::before {
+    background-image: linear-gradient(to right, #ffbd67, #e74f98);
+}
+
+
+.social-media .youtube::before {
+    background-color: #c4032b;
+}
+
+
+
+.social-media .card .followers {
+    text-align: center;
+    margin: 15px 0 25px;
+}
+
+.social-media .card .followers .follow-num {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.social-media .card .followers h3 {
+    color: #63687E;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 6px;
+}
+
+.social-media .card .today-follow {
+    color: #10bf66;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* end head */
+
+/* strat Overview-today */
+.Overview-today {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #63687E;
+}
+
+.container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.container .cards .card {
+    height: 150px;
+    background-color: #EBF1FF;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .cards .card .page,
+.container .cards .card .views {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .cards .card .page span {
+    color: #63687E;
+}
+
+.container .cards .card .views .num {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container .cards .card .views .rate {
+    color: #10bf66;
+}
+
+/* end Overview-today */
