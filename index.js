@@ -13,7 +13,7 @@ btn.addEventListener('click', function () {
 
 
 // var myHttp = new XMLHttpRequest(); // take copy fro xmlhttprequest
-// myHttp.open('GET', 'https://v1.nocodeapi.com/belal/instagram/mbgtJNWbgyNwkipd'); // the area of the data
+// myHttp.open('GET', ''); // the area of the data
 // myHttp.send(); // send a connection require.
 
 // // array to store data that retreive
@@ -32,7 +32,7 @@ btn.addEventListener('click', function () {
 // تحديث عدد المتابعين
 function updateFollowersCount() {
     // إجراء طلب GET إلى الـ API
-    fetch('https://v1.nocodeapi.com/belal/instagram/mbgtJNWbgyNwkipd')
+    fetch('')
         .then(response => response.json())
         .then(data => {
             // استخراج عدد المتابعين من البيانات
